@@ -57,15 +57,15 @@ function osintLookup()
 
 function googleDork()
 	{
-	    # inurl check
-	    tput setaf 6
+	   	# inurl check
+	     	tput setaf 6
 		echo "checking inurl statements..."
 		$BROWSER https://www.google.com/search?q=inurl:$DORKLING
 
-       	# login checks
+       		# login checks
 		echo "checking login statements..."
-        $BROWSER https://www.google.com/search?q=site%3A*+$DORKLING
-       	$BROWSER https://www.google.com/search?q=site:*.*.+$DORKLING
+        	$BROWSER https://www.google.com/search?q=site%3A*+$DORKLING
+       		$BROWSER https://www.google.com/search?q=site:*.*.+$DORKLING
 		$BROWSER https://www.google.com/search?q=site:%3A+$DORKLING+%2Busername%2Bor%2Bpassword%2Bor%2Blogin
 
 		# checking wordpress
@@ -89,7 +89,7 @@ do
 		   osintLookup ;;
 
   		2) read -p "what would you like to dork?" DORKLING
-           echo "Targeting $DORKLING..."
+          	   echo "Targeting $DORKLING..."
 		   googleDork ;;
 
 		3) exit ;;
