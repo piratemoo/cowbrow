@@ -7,7 +7,7 @@ echo "https://www.piratemoo.com @apiratemoo"
 
 BROWSER="firefox"
 
-function osintLookup()
+function osint_lookup()
 	{
 		#Target's website
 		tput setaf 6
@@ -55,7 +55,7 @@ function osintLookup()
 		$BROWSER https://web.archive.org/web/*/$ADDRESS
 	}
 
-function googleDork()
+function google_dork()
 	{
 	   	# inurl check
 	     	tput setaf 6
@@ -86,11 +86,11 @@ do
 
 		1) read -p "enter target address:" ADDRESS
 		   echo "Targeting $ADDRESS..."
-		   osintLookup ;;
+		   osint_lookup ;;
 
   		2) read -p "what would you like to dork?" DORKLING
           	   echo "Targeting $DORKLING..."
-		   googleDork ;;
+		   google_dork ;;
 
 		3) exit ;;
   esac
